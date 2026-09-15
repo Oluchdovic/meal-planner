@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#171d19","on-error":"#ffffff","surface-variant":"#dee4de","surface-tint":"#406650","on-primary-container":"#acd6ba","on-secondary-container":"#6e2100","tertiary-fixed":"#ffdcbb","error":"#ba1a1a","on-secondary":"#ffffff","surface-bright":"#f5fbf4","surface-container-low":"#eff5ef","on-primary":"#ffffff","inverse-surface":"#2c322e","on-surface-variant":"#414843","primary-fixed":"#c2edd0","secondary-fixed":"#ffdbcf","secondary-container":"#fd8456","surface-container":"#eaefe9","primary":"#204632","surface-dim":"#d6dcd5","on-secondary-fixed-variant":"#812900","secondary-fixed-dim":"#ffb59b","outline":"#727972","inverse-primary":"#a6d0b5","on-tertiary-container":"#ffc07b","tertiary-fixed-dim":"#faba75","background":"#f5fbf4","on-surface":"#171d19","surface-container-high":"#e4eae3","surface-container-highest":"#dee4de","on-tertiary":"#ffffff","on-tertiary-fixed-variant":"#673d00","tertiary-container":"#7a4c0f","surface-container-lowest":"#ffffff","secondary":"#a13f17","on-primary-fixed-variant":"#284e39","on-secondary-fixed":"#380d00","primary-fixed-dim":"#a6d0b5","error-container":"#ffdad6","primary-container":"#385e48","inverse-on-surface":"#ecf2ec","on-tertiary-fixed":"#2b1700","on-primary-fixed":"#002111","on-error-container":"#93000a","tertiary":"#5d3600","surface":"#f5fbf4","outline-variant":"#c1c8c1"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{margin:"2rem","space-lg":"1.5rem","space-xs":"0.25rem",gutter:"1.25rem","margin-mobile":"1rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","space-sm":"0.5rem"},fontFamily:{"body-lg":["Plus Jakarta Sans"],"headline-sm":["Epilogue"],"headline-md":["Epilogue"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Epilogue"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Epilogue"],display:["Epilogue"],"body-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},fontSize:{"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"600"}],display:["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 w-full px-margin flex flex-col justify-between pt-3 pb-2"><div class="flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="MiamPlan Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VeJuinvlVWH17KDwkdLtr-XvlWm6f-8hBnpprTuYJMFaNzA_MpvS2MwzSEx049_-aJMOTXkkOuI_RNyUOeeT8sZi250nIo8hQ6CFvIhaPew6StF8UilfXfKbwAhrfag6cGtw5WX5bT6hhm2A9QlZq1ln5w1Vn7v43TS3FRrCNYyHhV8YQGvEx3-utVpo4UTe-tfmi6xT_z_KFDN34PgmB6woNOMKvqZaR9Vbs88oXtADydLPpkOUXHJuw"/><span class="font-headline-md text-headline-md text-primary tracking-tight">MiamPlan</span></div><nav class="hidden lg:flex items-center gap-space-xs p-space-xs bg-surface-container-low rounded-xl" data-active-classes="bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary font-label-lg text-label-lg rounded-lg shadow-sm" data-path="planifier-les-repas" href="#">Planifier les repas</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="mon-planning" href="#">Mon Planning</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="mes-recettes" href="#">Mes Recettes</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors rounded-lg" data-path="liste-de-courses" href="#">Liste de courses</a></nav></div><div class="flex items-center gap-space-md"><button class="inline-flex items-center gap-space-xs bg-secondary text-on-secondary px-space-md py-2 rounded-lg font-label-lg text-label-lg shadow-[0_2px_8px_rgba(161,63,23,0.18)] hover:bg-on-secondary-fixed-variant transition-colors" type="button"><span class="material-symbols-outlined text-body-lg">shopping_cart_checkout</span><span>Générer liste de courses</span></button><button aria-label="Notifications repas" class="p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-headline-sm">notifications</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTVMQW7ybcrhUbl0AxizXOQSH-3OiFUeo2UopU46hQURuMlSlpOFlo5hrpraOy7STUTjltv4WL0l7xv9Vo5uF2atG1BUXLDVP3XKVGZFikZ57jWP_0QyepwHx9hO1bBfQGS7M6aMIPRvVIZwhbwQOlEn89Otn0MPBeXXel8McG8x5VAZBQClpejMgezp2KZV1xzQkctRdB3LhbUsFuz-onHATFEtBu3fy91YKhxglV_ZkngfmD_Kbd"/><span class="font-label-md text-label-md text-on-surface hidden sm:inline-block">Camille R.</span></div></div></div><div class="flex items-center justify-between bg-surface-container-low rounded-lg px-space-md py-1.5"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-body-md">calendar_today</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Période :</span><span class="font-body-md text-body-md font-semibold text-on-surface">Du Mercredi 15 Mai au Mardi 21 Mai</span><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">7 jours</span></div><div class="flex items-center gap-space-xs"><button class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-md text-on-primary-fixed-variant bg-primary-fixed hover:bg-primary-fixed-dim transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-body-sm">date_range</span><span>Changer l'intervalle</span></button></div></div></div></header><main class="w-full pt-28 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Banner Top: Active Range & Fast Metrics Bar -->
+<section class="w-full px-margin py-space-md bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col xl:flex-row items-start xl:items-center justify-between gap-gutter">
+<!-- Title & Active Interval Focus -->
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-headline-md" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Planification Active</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">7 jours de repas</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface font-semibold">
+            Du Mercredi 15 Mai au Mardi 21 Mai 2024
+          </h1>
+</div>
+</div>
+<!-- Quick Planning Progress & Bulk Actions -->
+<div class="flex flex-wrap items-center gap-space-sm w-full xl:w-auto justify-start xl:justify-end">
+<!-- Progress Counter -->
+<div class="flex items-center gap-space-sm px-space-md py-2 bg-surface-container-low rounded-xl">
+<div class="relative w-8 h-8 flex items-center justify-center">
+<svg class="w-8 h-8 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="86, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-sm text-label-sm font-bold text-primary">12</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">12 sur 14 planifiés</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Plus que 2 repas !</span>
+</div>
+</div>
+<!-- Actions -->
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-fixed text-on-primary-fixed-variant hover:bg-primary-fixed-dim transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-body-lg">auto_fix_high</span>
+<span>Remplir les trous</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-body-lg">content_copy</span>
+<span>Dupliquer</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-body-lg">print</span>
+<span>Exporter</span>
+</button>
+</div>
+</div>
+<!-- Collapsible Interactive Date Range Bar -->
+<div class="mt-space-md p-space-md bg-surface-container-low rounded-xl flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">Intervalle sur mesure :</span>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary text-body-md">event</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Début : Mer. 15 Mai</span>
+</div>
+<span class="text-on-surface-variant font-body-md font-bold">→</span>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-body-md">event_available</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Fin : Mar. 21 Mai</span>
+</div>
+</div>
+<!-- Presets Chips -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden lg:inline">Raccourcis :</span>
+<button class="px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm" type="button">
+          Semaine 7j (Active)
+        </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button">
+          Ce weekend (3j)
+        </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button">
+          5 jours ouvrés
+        </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors font-label-sm text-label-sm" type="button">
+          10 jours
+        </button>
+</div>
+</div>
+</section>
+<!-- Main Workstation Layout: 2 Columns -->
+<div class="w-full px-margin py-space-lg grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+<!-- LEFT PANEL (Col 1-4): Recipe Library & Quick Ideas -->
+<aside class="xl:col-span-4 flex flex-col gap-space-md xl:sticky xl:top-36 bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<!-- Panel Header & Search -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm">menu_book</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Idées &amp; Recettes</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">48 dispos</span>
+</div>
+<!-- Search bar -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-body-lg">search</span>
+<input class="w-full pl-10 pr- space-md py-2 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-on-surface-variant/60 focus:outline-none focus:bg-surface-container transition-colors" placeholder="Rechercher pâtes, dahl, salade..." type="text"/>
+</div>
+<!-- Filter Chips Carousel -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 text-nowrap">
+<button class="px-space-sm py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-label-sm">check</span> Tous
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-label-sm">timer</span> &lt; 20 min
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-label-sm">eco</span> Végétarien
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-label-sm">local_florist</span> De saison
+          </button>
+<button class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-label-sm">euro</span> Éco
+          </button>
+</div>
+</div>
+<!-- Quick Actions (AI Surprise / Leftover placeholder) -->
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-tertiary-fixed text-on-tertiary-fixed hover:bg-tertiary-fixed-dim transition-colors text-center" type="button">
+<span class="material-symbols-outlined text-headline-sm">auto_awesome</span>
+<span class="font-label-sm text-label-sm font-bold mt-1">Idée Surprise IA</span>
+</button>
+<button class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant hover:bg-secondary-fixed-dim transition-colors text-center" type="button">
+<span class="material-symbols-outlined text-headline-sm">recycling</span>
+<span class="font-label-sm text-label-sm font-bold mt-1">Repas Restes / Vide</span>
+</button>
+</div>
+<!-- Draggable Recipe Cards Stack -->
+<div class="flex flex-col gap-space-sm max-h-[640px] overflow-y-auto pr-1">
+<!-- Recipe Item 1 -->
+<div class="group p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl flex items-center gap-space-sm transition-all shadow-sm cursor-grab active:cursor-grabbing">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0" data-alt="A delicate and vibrant green asparagus risotto dish garnished with shaved parmesan cheese and fresh herbs, served on rustic ceramic tableware with warm cinematic natural kitchen lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa2icE-MXi5DLUxghkwZF17CimsjOXSWwgiv7mCy6SeDvye-d4hfodNAsIhmsJgPEwyLeTev2q8kPL67LA_TBMGg5oys5JbL37sSceeHGo0uNfjh8O9ADKRF6n5uL8Et6Rs9BApiBfp16ZmE5SQiCqTPDTyGWB9lWuPysmQwM_l4m0DXVOlEdjfJAaaLWUAlORqA3oyjpTrhSusvB8L6juqrhi9v8S3-i9rzCYGojwOEWZ3rUcBMbM"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed text-on-primary-fixed-variant">Saison</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-label-sm">schedule</span> 25m
+              </span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-0.5">Risotto vert aux asperges</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">410 kcal • 4 pers.</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface-variant transition-colors flex-shrink-0" title="Assigner rapidement" type="button">
+<span class="material-symbols-outlined text-body-md">add</span>
+</button>
+</div>
+<!-- Recipe Item 2 -->
+<div class="group p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl flex items-center gap-space-sm transition-all shadow-sm cursor-grab active:cursor-grabbing">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0" data-alt="A colorful fresh salmon quinoa poke bowl with sliced ripe avocado, edamame beans, radishes, and sesame seeds, captured in bright natural morning illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmoHPmKrSq9PJyUe20Uk8kdsIvpGz82evQXhE7J-UnT516LOjdsiKLmhZ99fFPdmZFetDuDfk-Y1Y2LfevtZmQUgVzpKXbuiwuvDLpLyFKlctDYBGG0giYSlYGWkBONHMEyMexKD-pmswQUbUA6HpMm0Z-mUxoDLa9CIaKUVdlBJ-azD2_YzWVX4J4Z_-WlPxwt8y2qEVBi8RdiibMmVsd690TB2wAG64_1bxlHB9Lo0fEI8g0-dp1"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-secondary-fixed text-on-secondary-fixed-variant">Équilibré</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-label-sm">schedule</span> 15m
+              </span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-0.5">Bowl Quinoa, Saumon &amp; Avocat</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">520 kcal • 2 pers.</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface-variant transition-colors flex-shrink-0" title="Assigner rapidement" type="button">
+<span class="material-symbols-outlined text-body-md">add</span>
+</button>
+</div>
+<!-- Recipe Item 3 -->
+<div class="group p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl flex items-center gap-space-sm transition-all shadow-sm cursor-grab active:cursor-grabbing">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0" data-alt="Creamy aromatic red lentil dahl soup enriched with coconut milk, cilantro, and warm turmeric spices, placed in a handmade terracotta bowl with naan bread." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCapyK1fmd5ndjjiQMqJ6mmc4Rxyi-Psa3wqICXADLwGAKcdkKlu9hLXIv5gJidYt8lNaKKpcShlObfq3PB_AfFCdP5P3laN2TVj4WYmoE0D_ywJkQf7YOxerxx3rd9UrURh63FT1hf_rbUCtUzv6EO6zhFkZDSex-wSUzp23sZff5r-Z4mU8LcQSQGQY6k5WraE84wlU3ItIJbKDwEol1LZaqPSSAdqpUPiVqAU20qdBv01Po0A_MR"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-tertiary-fixed text-on-tertiary-fixed">Végé</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-label-sm">schedule</span> 20m
+              </span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-0.5">Dahl réconfortant lentilles corail</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">380 kcal • 4 pers.</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface-variant transition-colors flex-shrink-0" title="Assigner rapidement" type="button">
+<span class="material-symbols-outlined text-body-md">add</span>
+</button>
+</div>
+<!-- Recipe Item 4 -->
+<div class="group p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl flex items-center gap-space-sm transition-all shadow-sm cursor-grab active:cursor-grabbing">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0" data-alt="A golden baked frittata with zucchini blossoms, goat cheese, and sundried tomatoes, shot overhead on an olive wood cutting board." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFvAGOeluLlswxotlLj59nLzf5hfbAhBwIC5w1pUWfnFMjorkP6wsQJNgloZYJ_I70Hzx2ZUSeaY8KqGL80S8yrH5f1PUbMZ7CfFeyukz_N9sWgzJDcrRa-N0J1H_Y5pwihi08akQ6Vm_4BzsZ2-vdmUXLyQR8W8f3WEGZL2CJ8J-KxXDCRSPHqh3kgK3pK87KFoiGs8sgHercVmi_zUbuBUn5JNtPyOKuo_39vivVPWwbm6HEnFHk"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary-fixed text-on-primary-fixed-variant">Rapide</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-label-sm">schedule</span> 15m
+              </span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-0.5">Frittata courgettes &amp; chèvre frais</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">340 kcal • 3 pers.</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface-variant transition-colors flex-shrink-0" title="Assigner rapidement" type="button">
+<span class="material-symbols-outlined text-body-md">add</span>
+</button>
+</div>
+<!-- Recipe Item 5 -->
+<div class="group p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl flex items-center gap-space-sm transition-all shadow-sm cursor-grab active:cursor-grabbing">
+<img class="w-16 h-16 rounded-lg object-cover flex-shrink-0" data-alt="Stir-fried crunchy noodles with marinated tofu, crisp snap peas, and sesame drizzle presented in a modern clay bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbrGMc5F6kOa_aW0thf0lvT-pD_OcsdlGWtvYTCkrecjNCg5DCbjB8HHg678nRYAxfj6V9-Jah38an7cWB68U3RFQiByS2dY5cI5giJqHLI5emN5NlViPQnswj2Qaw-BfVdmPsyWCAnzeIenqXJ9yk225WxAx9SQStXOQEakBc_QXBPNhSuEoA5B6ZNXCBTmhUnajPhiVzxnFLHt7VKLfovGdeWSa_J2m5XTzp08E9Zr0SU2xmGkir"/>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-secondary-fixed text-on-secondary-fixed-variant">Express</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-label-sm">schedule</span> 12m
+              </span>
+</div>
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold truncate mt-0.5">Nouilles sautées tofu &amp; légumes</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">440 kcal • 2 pers.</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-highest hover:bg-primary hover:text-on-primary text-on-surface-variant transition-colors flex-shrink-0" title="Assigner rapidement" type="button">
+<span class="material-symbols-outlined text-body-md">add</span>
+</button>
+</div>
+</div>
+<!-- Drag tip footnote -->
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant/80 font-body-sm text-body-sm pt-2">
+<span class="material-symbols-outlined text-body-md">drag_indicator</span>
+<span>Glissez une recette sur un créneau libre</span>
+</div>
+</aside>
+<!-- RIGHT PANEL (Col 5-12): 7-Day Planning Matrix -->
+<section class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Week Grid Container (7 Days of the Interval: Wed 15 -> Tue 21) -->
+<div class="flex flex-col gap-space-md">
+<!-- DAY 1: Mercredi 15 Mai -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<!-- Day Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-9 h-9 rounded-lg bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center font-headline-sm text-headline-sm font-bold">15</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Mercredi 15 Mai</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 convives prévus • Soirée calme</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+                1 840 kcal • Score A
+              </span>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<!-- Slots Container -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Déjeuner Slot (Filled) -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Déjeuner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Bowl Quinoa &amp; Saumon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Avocat, radis, vinaigrette sésame</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">520 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Goûter Slot (Filled) -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Goûter</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Compote pomme-poire maison</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Amandes effilées grillées</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">140 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Dîner Slot (Filled) -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">Dîner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Risotto vert aux asperges</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Asperges fraîches &amp; pecorino</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">410 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DAY 2: Jeudi 16 Mai -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-bold">16</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Jeudi 16 Mai</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 convives • Déjeuner rapide</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+                1 910 kcal • Score A
+              </span>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Déjeuner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Déjeuner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Frittata courgettes &amp; chèvre</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Accompagnée de mesclun balsamique</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">340 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">3 parts</span>
+</div>
+</div>
+<!-- Goûter Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Goûter</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Yaourt grec, miel &amp; noix</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pépites de sarrasin grillé</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">190 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">3 parts</span>
+</div>
+</div>
+<!-- Dîner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">Dîner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Dahl de lentilles corail</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Lait de coco, riz basmati &amp; coriandre</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">380 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DAY 3: Vendredi 17 Mai -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-bold">17</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Vendredi 17 Mai</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 convives • Menu festif fin de semaine</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+                2 050 kcal • Score B
+              </span>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Déjeuner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Déjeuner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Nouilles sautées tofu &amp; pois</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Wok minute sauce soja gingembre</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">440 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Goûter Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Goûter</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Smoothie fraises &amp; menthe</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Fraises Gariguette de saison</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">110 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Dîner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">Dîner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Tarte fine aux tomates confites</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Burrata crémeuse &amp; roquette</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">510 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DAY 4: Samedi 18 Mai (With Empty Slot Call to Action) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-bold">18</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Samedi 18 Mai</h3>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">1 créneau non assigné</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+                1 420 kcal
+              </span>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Déjeuner Slot (Filled) -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Déjeuner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Brunch oeufs pochés &amp; brioche</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Épinards fondants &amp; sauce hollandaise</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">560 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Goûter Slot (Filled) -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Goûter</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Pancakes avoine &amp; myrtilles</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Sirop d'érable pur</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">220 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Dîner Slot (EMPTY INTERACTIVE DROPZONE) -->
+<button class="min-h-[110px] p-space-sm bg-surface-container rounded-xl flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all group" type="button">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-body-lg">add</span>
+</div>
+<span class="font-label-md text-label-md font-semibold">Dîner vide</span>
+<span class="font-body-sm text-body-sm opacity-80">+ Ajouter un plat ou glisser ici</span>
+</button>
+</div>
+</div>
+<!-- DAY 5: Dimanche 19 Mai -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-bold">19</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Dimanche 19 Mai</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Batch cooking &amp; préparation semaine</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+                1 880 kcal • Score A
+              </span>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Déjeuner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Déjeuner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Poulet rôti au romarin &amp; pommes grenaille</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Jus perlé aux gousses d'ail confites</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">610 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Goûter Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Goûter</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Banana bread moelleux</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pépites chocolat noir 70%</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">240 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">6 parts</span>
+</div>
+</div>
+<!-- Dîner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">Dîner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Velouté de courgettes &amp; menthe</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tartine grillée frottée à l'ail</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">270 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DAY 6: Lundi 20 Mai -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-bold">20</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Lundi 20 Mai</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lundi de Pentecôte (Férié)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+                1 790 kcal • Score A
+              </span>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Déjeuner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Déjeuner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Salade de lentilles vertes &amp; feta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Échalotes, vinaigrette moutardée</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">420 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Goûter Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Goûter</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Pomme au four à la cannelle</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Éclats de noisettes</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">130 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Dîner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">Dîner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Penne intégrales au pesto d'épinards</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pignons dorés et copeaux de parmesan</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">460 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+</div>
+</div>
+<!-- DAY 7: Mardi 21 Mai (Closing Range Day with 1 Slot to plan) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center font-headline-sm text-headline-sm font-bold">21</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Mardi 21 Mai</h3>
+<span class="font-body-sm text-body-sm text-secondary font-semibold">Dernier jour du cycle</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+                1 310 kcal (incomplet)
+              </span>
+<button class="p-1.5 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-body-lg">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Déjeuner Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Déjeuner</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Curry vert de légumes croquants</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Pois gourmands, carottes fanes, riz jasmin</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">430 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Goûter Slot -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col justify-between gap-space-sm relative group">
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Goûter</span>
+<button class="opacity-0 group-hover:opacity-100 p-1 text-on-surface-variant hover:text-error transition-all" type="button">
+<span class="material-symbols-outlined text-label-md">close</span>
+</button>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface line-clamp-1">Fromage blanc &amp; coulis mangue</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Graines de chia réhydratées</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">150 kcal</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm">4 parts</span>
+</div>
+</div>
+<!-- Dîner Slot (EMPTY INTERACTIVE DROPZONE) -->
+<button class="min-h-[110px] p-space-sm bg-surface-container rounded-xl flex flex-col items-center justify-center gap-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all group" type="button">
+<div class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-body-lg">add</span>
+</div>
+<span class="font-label-md text-label-md font-semibold">Dîner vide</span>
+<span class="font-body-sm text-body-sm opacity-80">+ Ajouter un plat ou glisser ici</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Weekly Macro-Balance Summary Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-headline-sm">monitoring</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Bilan nutritionnel du cycle (7 jours)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Moyenne quotidienne : 1 820 kcal • 78g protéines • 65% repas végétariens</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold">
+            Score Santé : A+
+          </span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-highest hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+            Voir détails complets
+          </button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for active navigation and quick slot feedback
+  document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('header nav a');
+    navItems.forEach(item => {
+      if (item.getAttribute('data-path') === 'planifier-les-repas') {
+        item.className = 'px-space-md py-space-xs font-label-lg text-label-lg bg-primary-container text-on-primary rounded-lg shadow-sm';
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-lg shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full px-margin flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">MiamPlan</span><span class="text-body-sm text-on-surface-variant font-body-sm">— Gastronomie du quotidien &amp; planification sereine.</span></div><div class="text-body-sm text-on-surface-variant font-body-sm">© 2024 MiamPlan. Tous droits réservés.</div></div></footer></body></html>

@@ -1,0 +1,16 @@
+{
+  "name": "meal-planner",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"yarn workspace meal-planner-server dev\" \"yarn workspace meal-planner-web dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
