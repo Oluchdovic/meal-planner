@@ -6,6 +6,8 @@ import { pipeline } from 'node:stream/promises';
 import { randomUUID } from 'node:crypto';
 import { ValidationError } from '../../shared/errors.js';
 import { RecipesRepository } from './repository.js';
+import { RecipeImportService } from './import/import-service.js';
+import type { ImportRecipeRequest } from './import/types.js';
 import type { RecipeInput } from './types.js';
 
 interface RecipesRouteOptions {
@@ -20,6 +22,7 @@ export async function registerRecipeRoutes(
   options: RecipesRouteOptions
 ): Promise<void> {
   const repo = new RecipesRepository(app.db);
+  const importService = new RecipeImportService();
   const { userId, photosDir } = options;
 
   app.get('/api/recipes', async (request) => {
@@ -43,6 +46,15 @@ export async function registerRecipeRoutes(
     const recipe = repo.create(userId, body);
     reply.code(201);
     return recipe;
+  });
+
+  /**
+   * Extraction d'une recette depuis une URL publique. Ne persiste rien :
+   * le client enchaîne sur `POST /api/recipes` avec les données retournées.
+   */
+  app.post('/api/recipes/import', async (request) => {
+    const body = request.body as Partial<ImportRecipeRequest> | null;
+    return importService.importFromUrl(body?.url);
   });
 
   app.put('/api/recipes/:id', async (request) => {

@@ -11,7 +11,7 @@ Mono-utilisateur en V1 (pas d'authentification), mais le modèle de données por
 
 **Hors scope V1** (explicitement reporté) :
 - Nutrition / calories.
-- Import de recettes depuis des sites externes (scraping).
+- ~~Import de recettes depuis des sites externes (scraping).~~ **Livré après la V1** : import depuis une URL via les données structurées Schema.org, avec replis microdata et heuristique. Voir [docs/recipe-import.md](./docs/recipe-import.md).
 - Authentification et gestion réelle de plusieurs utilisateurs (la table `users` existe, mais un seul utilisateur est créé au démarrage, sans login).
 - Application mobile native.
 - Export / impression PDF (une vue imprimable simple via le navigateur peut suffire si besoin, mais aucune génération de PDF côté serveur).

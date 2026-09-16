@@ -74,6 +74,33 @@ export interface Tag {
   name: string;
 }
 
+/** Stratégie d'extraction utilisée par l'import depuis une URL. */
+export type ImportExtractionStrategy = 'json-ld' | 'microdata' | 'heuristic';
+
+export interface ImportedIngredient {
+  name: string;
+  /** Absent si aucune quantité n'a pu être lue sur la page d'origine. */
+  quantity?: number;
+  /** Absent si l'unité d'origine n'a pas d'équivalent dans `UNITS`. */
+  unit?: Unit;
+}
+
+export interface ImportedRecipeStep {
+  order: number;
+  description: string;
+}
+
+/** Réponse de `POST /api/recipes/import` : recette extraite, non encore enregistrée. */
+export interface ImportedRecipe {
+  name: string;
+  servings: number;
+  ingredients: ImportedIngredient[];
+  steps: ImportedRecipeStep[];
+  sourceUrl: string;
+  extraction: ImportExtractionStrategy;
+  warnings: string[];
+}
+
 export type MealType = 'breakfast' | 'lunch' | 'dinner' | 'snack';
 
 export const MEAL_TYPES: MealType[] = ['breakfast', 'lunch', 'dinner', 'snack'];

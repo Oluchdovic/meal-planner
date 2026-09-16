@@ -747,6 +747,82 @@ textarea {
   font-style: italic;
 }
 
+.banner-success {
+  background: var(--sage-soft);
+  border: 1px solid var(--sage);
+  color: var(--petrol-900);
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.banner-success p {
+  color: inherit;
+  margin: 0;
+}
+
+.banner-success__warnings {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.banner-success__warnings li {
+  margin-bottom: 0.2rem;
+}
+
+/* ---------- Import d'une recette depuis une URL ---------- */
+
+.page-header__actions-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.import-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1 1 340px;
+  min-width: 0;
+  max-width: 520px;
+}
+
+.import-form__field {
+  margin-bottom: 0;
+}
+
+.import-form__hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  max-width: none;
+}
+
+.import-form .banner-error {
+  margin-bottom: 0;
+}
+
+.import-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 560px) {
+  .import-form {
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  .import-form__actions .btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}
+
 /* ---------- Plans list ---------- */
 
 .plan-list {

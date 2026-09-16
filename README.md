@@ -31,6 +31,21 @@ Au premier démarrage du serveur, les migrations SQL (`server/migrations/`) sont
 
 Ouvrir http://localhost:5173.
 
+## Tests
+
+```bash
+yarn test                                 # les deux workspaces (Vitest)
+yarn workspace meal-planner-server test   # parsers et service d'import
+yarn workspace meal-planner-web test      # hooks, helpers, composants (jsdom + Testing Library)
+yarn typecheck                            # tsc --noEmit sur les deux workspaces
+```
+
+## Importer une recette depuis une URL
+
+Depuis l'écran **Recettes**, le bouton « Ajouter une recette » ouvre un champ d'URL : l'application récupère la page, en extrait le titre, le nombre de personnes, les ingrédients et les étapes, puis ajoute la recette à la bibliothèque.
+
+L'extraction s'appuie en priorité sur les données structurées Schema.org (JSON-LD), avec repli sur les microdata puis sur une heuristique HTML. Les données approximées ou manquantes sont signalées à l'utilisateur après l'import. Détails, limites et choix techniques : [docs/recipe-import.md](./docs/recipe-import.md).
+
 ## Build de production
 
 ```bash

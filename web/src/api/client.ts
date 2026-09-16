@@ -1,4 +1,5 @@
 import type {
+  ImportedRecipe,
   MealPlan,
   MealPlanInput,
   PlanSlot,
@@ -45,6 +46,9 @@ export const api = {
     update: (id: number, input: RecipeInput) =>
       request<Recipe>(`/recipes/${id}`, { method: 'PUT', body: JSON.stringify(input) }),
     delete: (id: number) => request<void>(`/recipes/${id}`, { method: 'DELETE' }),
+    /** Extrait une recette depuis une URL publique, sans l'enregistrer. */
+    importFromUrl: (url: string) =>
+      request<ImportedRecipe>('/recipes/import', { method: 'POST', body: JSON.stringify({ url }) }),
     uploadPhoto: (id: number, file: File) => {
       const form = new FormData();
       form.append('file', file);

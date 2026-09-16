@@ -18,3 +18,24 @@ export class ValidationError extends HttpError {
     super(400, message);
   }
 }
+
+/** La requête est bien formée mais le contenu distant est inexploitable. */
+export class UnprocessableEntityError extends HttpError {
+  constructor(message = 'Contenu inexploitable') {
+    super(422, message);
+  }
+}
+
+/** Un service distant (site de recettes) est injoignable ou répond en erreur. */
+export class BadGatewayError extends HttpError {
+  constructor(message = 'Service distant injoignable') {
+    super(502, message);
+  }
+}
+
+/** Un service distant n’a pas répondu dans le délai imparti. */
+export class GatewayTimeoutError extends HttpError {
+  constructor(message = 'Délai d’attente dépassé') {
+    super(504, message);
+  }
+}

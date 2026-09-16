@@ -8,7 +8,9 @@
     "web"
   ],
   "scripts": {
-    "dev": "concurrently -n server,web -c blue,green \"yarn workspace meal-planner-server dev\" \"yarn workspace meal-planner-web dev\""
+    "dev": "concurrently -n server,web -c blue,green \"yarn workspace meal-planner-server dev\" \"yarn workspace meal-planner-web dev\"",
+    "test": "yarn workspace meal-planner-server test && yarn workspace meal-planner-web test",
+    "typecheck": "yarn workspace meal-planner-server typecheck && yarn workspace meal-planner-web typecheck"
   },
   "devDependencies": {
     "concurrently": "^9.0.1"
